@@ -1,0 +1,74 @@
+$headerheight:32px;
+$headerbg:#f2f2f2;
+$fontsize:12px;
+@mixin positionright($value:absolute, $right:0px, $top:0px) {
+    position: $value;
+    right: $right;
+    top: $top;
+}
+
+@mixin hpadding($left, $right) {
+    padding-left: $left;
+    padding-right: $right;
+}
+
+@mixin gongyou() {
+    height: $headerheight;
+    line-height: $headerheight;
+    font-size: $fontsize;
+    color: #999;
+}
+
+@mixin a1($n:none, $color:#999, $pointer:pointer) {
+    text-decoration: $n;
+    color: $color;
+    cursor: $pointer;
+}
+
+.nav {
+    height: $headerheight;
+    background-color: $headerbg;
+    border-bottom: 1px solid #e5e5e5;
+    .navcentr {
+        margin: 0 auto;
+        height: $headerheight;
+        width: 1230px;
+        position: relative;
+        p {
+            @include gongyou;
+            display: inline-block;
+            a {
+                @include hpadding(20px, 10px);
+                @include a1;
+            }
+            a+a {
+                @include hpadding(10px, 10px);
+                @include a1;
+            }
+        }
+        ul {
+            @include positionright;
+            @include gongyou;
+            list-style: none;
+        }
+        li {
+            float: left;
+            height: $headerheight;
+            a {
+                display: block;
+                @include hpadding(10px, 14px);
+                @include a1;
+                border-right: solid 1px #f2f2f2;
+                border-left: solid 1px #f2f2f2;
+            }
+        }
+        .li4 {
+            width: 0px;
+            height: 14px;
+            border-left: 1px solid #e5e5e5;
+            margin: 0px 2px 0px 3px;
+            position: relative;
+            top: 25%;
+        }
+    }
+}

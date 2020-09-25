@@ -1,0 +1,292 @@
+$zi:12px;
+$color2:#999;
+$bg1:#fff;
+@mixin hpadding($top, $right) {
+    padding-top: $top;
+    padding-right: $right;
+}
+
+@mixin liall() {
+    width: 235px;
+    height: 301px;
+    float: left;
+    margin-left: 13px;
+    border-bottom: 15px solid #f5f5f5;
+    background-color: #fff;
+}
+
+@mixin aall() {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.content {
+    width: 100%;
+    background-color: $bg1;
+    color: $color2;
+    font-size: $zi;
+}
+
+.content>.mainnav {
+    width: 100%;
+    height: 35.5px;
+    border-bottom: 1.5px solid #FF0036;
+    background-color: $bg1;
+    .mainnavc {
+        width: 1320px;
+        margin: 0 auto;
+        padding-right: 30px;
+        background-color: blue;
+    }
+}
+
+.content>.banner {
+    height: 500px;
+    width: 100%;
+    background-color: $bg1;
+    overflow: hidden;
+    ul {
+        height: 500px;
+        width: 1230px;
+        margin: 0 auto;
+        position: relative;
+        list-style: none;
+        li {
+            float: left;
+        }
+    }
+}
+
+.content>.brandWall {
+    margin: auto;
+    width: 1230px;
+    height: 370px;
+    background-color: pink;
+    @include hpadding(24px, 30px);
+    .ul1 {
+        background-color: transparent;
+        list-style: none;
+        li {
+            width: 234px;
+            height: 370px;
+            display: block;
+            float: left;
+            margin-right: 13px;
+            background-color: $bg1;
+        }
+    }
+}
+
+.content>.newHotBrand {
+    width: 1230px;
+    margin: 15px auto 0;
+    @include hpadding(0, 30px);
+    .ul3 {
+        height: 370px;
+        width: 100%;
+        background-color: #f5f5f5;
+        list-style: none;
+        overflow: hidden;
+        li {
+            width: 122px;
+            height: 108px;
+            float: left;
+            margin-bottom: 1px;
+            margin-right: 1px;
+            background-color: paleturquoise;
+        }
+    }
+}
+
+.content>.newFloor {
+    width: 1230px;
+    margin: 20px auto 0;
+    @include hpadding(0, 30px);
+    .newFloorc {
+        margin-top: 20px;
+        height: 665px;
+        width: 100%;
+        .ptitle {
+            height: 28px;
+            font-size: 18px;
+            img {
+                width: 214px;
+                height: 25px;
+            }
+        }
+        .fneirong {
+            width: 100%;
+            height: 618px;
+            margin-top: 10px;
+            overflow: hidden;
+            .p2 {
+                height: 618px;
+                width: 235px;
+                float: left;
+                background-color: greenyellow;
+            }
+            .p3 {
+                width: 995px;
+                height: 618px;
+                float: left;
+                background-color: grey;
+                li {
+                    @include liall;
+                }
+                .li1 {
+                    width: 484px;
+                    height: 301px;
+                }
+            }
+        }
+    }
+}
+
+.content>.newFloor {
+    width: 1230px;
+    margin: 20px auto 0;
+    @include hpadding(0, 30px);
+    .newFloorc {
+        margin-top: 20px;
+        height: 665px;
+        width: 100%;
+        .ptitle {
+            height: 28px;
+            font-size: 18px;
+            img {
+                width: 214px;
+                height: 25px;
+            }
+        }
+        .fneirong {
+            width: 100%;
+            height: 618px;
+            margin-top: 10px;
+            overflow: hidden;
+            .p2 {
+                height: 618px;
+                width: 235px;
+                float: left;
+                background-color: greenyellow;
+            }
+            .p3 {
+                width: 995px;
+                height: 618px;
+                float: left;
+                background-color: grey;
+                li {
+                    @include liall;
+                }
+            }
+        }
+    }
+}
+
+.content>.tp {
+    height: 90px;
+    width: 1230px;
+    margin: 10px auto 0;
+    @include hpadding(0, 30px);
+    overflow: hidden;
+    a {
+        @include aall;
+        img {
+            display: block;
+            width: 1620px;
+            height: 90px;
+            margin-left: -165px;
+        }
+    }
+}
+
+.content>.line {
+    width: 1230px;
+    height: 665px;
+    margin: 20px auto 0;
+    @include hpadding(0, 30px);
+    .newFloorc {
+        margin-top: 20px;
+        height: 665px;
+        width: 100%;
+        i {
+            display: inline-block;
+            width: 5px;
+            height: 18px;
+            background-color: #000;
+            vertical-align: middle;
+        }
+        p {
+            display: inline-block;
+            height: 28px;
+            font-size: 18px;
+            color: #000;
+            text-align: center;
+            vertical-align: middle;
+        }
+        span {
+            display: inline-block;
+            color: #000;
+            font-size: 14px;
+        }
+        .fneirong {
+            width: 100%;
+            height: 618px;
+            margin-top: 10px;
+            overflow: hidden;
+            .p2 {
+                height: 618px;
+                width: 235px;
+                float: left;
+                background-color: greenyellow;
+            }
+            .p3 {
+                width: 995px;
+                height: 618px;
+                float: left;
+                background-color: grey;
+                li {
+                    @include liall;
+                }
+            }
+        }
+    }
+}
+
+.content>.wonderful {
+    width: 1230px;
+    margin: 30px auto 0;
+    @include hpadding(0, 30px);
+    p {
+        height: 43px;
+        line-height: 20px;
+        font-size: 18px;
+        text-align: center;
+        color: #666;
+        font-weight: 100;
+        position: relative;
+    }
+    ul {
+        height: 333px;
+        list-style: none;
+        li {
+            width: 235px;
+            float: left;
+            margin-bottom: 7px;
+            margin-right: 12px;
+            background-color: burlywood;
+            a {
+                height: 315px;
+                width: 100%;
+                display: block;
+                border: 2px solid #fff;
+                margin-right: 7px;
+                margin-bottom: 7px;
+                @include aall;
+            }
+        }
+        .last {
+            margin-right: 0px;
+        }
+    }
+}
