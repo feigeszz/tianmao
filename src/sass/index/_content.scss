@@ -7,13 +7,14 @@ $bg1:#fff;
 }
 
 @mixin liall() {
-    width: 235px;
-    height: 301px;
+    width: 233px;
+    height: 299px;
     float: left;
     margin-left: 13px;
     border-bottom: 15px solid #f5f5f5;
     background-color: #fff;
     list-style: none;
+    border: 1px solid #fff;
 }
 
 @mixin liallp() {
@@ -44,6 +45,7 @@ $bg1:#fff;
     background-color: $bg1;
     color: $color2;
     font-size: $zi;
+    position: relative;
 }
 
 .content>.mainnav {
@@ -111,15 +113,131 @@ $bg1:#fff;
             li:first-child {
                 background-color: #FF0036;
             }
+            .active {
+                background-color: #fff;
+            }
+            .g1:hover a {
+                color: rgb(248, 170, 183);
+            }
+            .g2:hover a {
+                color: rgb(65, 83, 247);
+            }
+            .g14:hover a {
+                color: rgb(93, 241, 93);
+            }
+            .g3:hover a {
+                color: rgb(240, 214, 66);
+            }
+            .g11:hover a {
+                color: rgb(240, 214, 66);
+            }
+            .g4:hover a {
+                color: rgb(156, 238, 101);
+            }
+            .g16:hover a {
+                color: rgb(156, 238, 101);
+            }
+            .g5:hover a {
+                color: rgb(240, 63, 131);
+            }
+            .g6:hover a {
+                color: rgb(101, 198, 236);
+            }
+            .g12:hover a {
+                color: rgb(101, 198, 236);
+            }
+            .g7:hover a {
+                color: rgb(238, 120, 165);
+            }
+            .g8.g13:hover a {
+                color: rgb(124, 218, 61);
+            }
+            .g13:hover a {
+                color: rgb(124, 218, 61);
+            }
+            .g9:hover a {
+                color: rgb(240, 179, 66);
+            }
+            .g10:hover a {
+                color: rgb(65, 235, 170);
+            }
+            .g15:hover a {
+                color: rgb(65, 235, 170);
+            }
+        }
+        .cartlist {
+            z-index: 100;
+            // width: 782px;
+            height: 500px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            // float: left;
+            // background-color: #fff;
+            .item {
+                height: 500px;
+                width: 852px;
+                position: absolute;
+                left: 318px;
+                display: none;
+                background-color: #fff;
+                a {
+                    display: block;
+                    margin-left: 30px;
+                    margin-top: 30px;
+                    font-size: 14px;
+                    font-weight: 700px;
+                    text-decoration: none;
+                    color: #333;
+                }
+            }
         }
         .lunbo {
             height: 500px;
-            width: 1230px;
+            width: 1130px;
             margin: 0 auto;
             position: relative;
-            list-style: none;
-            li {
-                float: left;
+            overflow: hidden;
+            // list-style: none;
+            .ul0 {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 10000px;
+                li {
+                    float: left;
+                    width: 1130px;
+                }
+            }
+            .slider {
+                z-index: 100;
+                position: absolute;
+                bottom: 20px;
+                left: 40%;
+                .slk {
+                    display: inline-block;
+                    width: 25px;
+                    height: 5px;
+                    margin-left: 5px;
+                    background-color: rgba(165, 72, 72, .3);
+                }
+                .active {
+                    background-color: #fff;
+                }
+            }
+            .right,
+            .left {
+                color: #fff;
+                position: absolute;
+                text-decoration: none;
+                top: 110px;
+                display: none;
+            }
+            .rigth {
+                right: 20px;
+            }
+            .left {
+                left: 20px;
             }
         }
     }
@@ -329,10 +447,10 @@ $bg1:#fff;
                 .g {
                     @include aall;
                 }
-                .li1 {
-                    width: 484px;
-                    height: 301px;
-                }
+                // .li1 {
+                //     width: 484px;
+                //     height: 301px;
+                // }
             }
         }
     }
@@ -473,6 +591,9 @@ $bg1:#fff;
                 .g {
                     @include aall;
                 }
+                .li7:hover {
+                    border: 1px solid #FF0036;
+                }
             }
         }
     }
@@ -493,9 +614,9 @@ $bg1:#fff;
         position: relative;
     }
     ul {
-        height: 333px;
+        height: 1998px;
         list-style: none;
-        li {
+        .xuanran {
             width: 235px;
             float: left;
             margin-bottom: 7px;
@@ -533,7 +654,7 @@ $bg1:#fff;
                 }
             }
         }
-        .last {
+        .xuanran:nth-of-type(5n) {
             margin-right: 0px;
         }
     }
@@ -543,5 +664,41 @@ $bg1:#fff;
         background: url(../img/end.png) no-repeat;
         margin: 0 auto 10px;
         text-align: center;
+    }
+}
+
+.content>.louti {
+    width: 35px;
+    margin-left: -673px;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    display: none;
+    ul>li {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 12px;
+        color: #fff;
+        list-style: none;
+        margin-top: 1px;
+        text-align: center;
+        overflow: hidden;
+        a {
+            display: block;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+    .li8 {
+        background-color: rgba(0, 0, 0, .6);
+    }
+    ul>li:first-child {
+        background-color: #ff0036;
+    }
+    ul>li:last-child {
+        background-color: rgba(0, 0, 0, .3);
+        line-height: 13px;
+        padding-top: 8px;
     }
 }

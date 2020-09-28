@@ -9,7 +9,7 @@
     background-color: transparent;
 }
 
-@import "nav";
-@import "header";
-@import "content";
-@import "footer";
+@import "./index/_nav";
+@import "./index/_header";
+@import "./index/_content";
+@import "./index/_footer";

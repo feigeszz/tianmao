@@ -126,6 +126,7 @@
   background-color: #fff;
   color: #999;
   font-size: 12px;
+  position: relative;
 }
 
 .content > .mainnav {
@@ -211,16 +212,155 @@
   background-color: #FF0036;
 }
 
-.content > .banner .bannerc .lunbo {
-  height: 500px;
-  width: 1230px;
-  margin: 0 auto;
-  position: relative;
-  list-style: none;
+.content > .banner .bannerc .caidan .active {
+  background-color: #fff;
 }
 
-.content > .banner .bannerc .lunbo li {
+.content > .banner .bannerc .caidan .g1:hover a {
+  color: #f8aab7;
+}
+
+.content > .banner .bannerc .caidan .g2:hover a {
+  color: #4153f7;
+}
+
+.content > .banner .bannerc .caidan .g14:hover a {
+  color: #5df15d;
+}
+
+.content > .banner .bannerc .caidan .g3:hover a {
+  color: #f0d642;
+}
+
+.content > .banner .bannerc .caidan .g11:hover a {
+  color: #f0d642;
+}
+
+.content > .banner .bannerc .caidan .g4:hover a {
+  color: #9cee65;
+}
+
+.content > .banner .bannerc .caidan .g16:hover a {
+  color: #9cee65;
+}
+
+.content > .banner .bannerc .caidan .g5:hover a {
+  color: #f03f83;
+}
+
+.content > .banner .bannerc .caidan .g6:hover a {
+  color: #65c6ec;
+}
+
+.content > .banner .bannerc .caidan .g12:hover a {
+  color: #65c6ec;
+}
+
+.content > .banner .bannerc .caidan .g7:hover a {
+  color: #ee78a5;
+}
+
+.content > .banner .bannerc .caidan .g8.g13:hover a {
+  color: #7cda3d;
+}
+
+.content > .banner .bannerc .caidan .g13:hover a {
+  color: #7cda3d;
+}
+
+.content > .banner .bannerc .caidan .g9:hover a {
+  color: #f0b342;
+}
+
+.content > .banner .bannerc .caidan .g10:hover a {
+  color: #41ebaa;
+}
+
+.content > .banner .bannerc .caidan .g15:hover a {
+  color: #41ebaa;
+}
+
+.content > .banner .bannerc .cartlist {
+  z-index: 100;
+  height: 500px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.content > .banner .bannerc .cartlist .item {
+  height: 500px;
+  width: 852px;
+  position: absolute;
+  left: 318px;
+  display: none;
+  background-color: #fff;
+}
+
+.content > .banner .bannerc .cartlist .item a {
+  display: block;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 700px;
+  text-decoration: none;
+  color: #333;
+}
+
+.content > .banner .bannerc .lunbo {
+  height: 500px;
+  width: 1130px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.content > .banner .bannerc .lunbo .ul0 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 10000px;
+}
+
+.content > .banner .bannerc .lunbo .ul0 li {
   float: left;
+  width: 1130px;
+}
+
+.content > .banner .bannerc .lunbo .slider {
+  z-index: 100;
+  position: absolute;
+  bottom: 20px;
+  left: 40%;
+}
+
+.content > .banner .bannerc .lunbo .slider .slk {
+  display: inline-block;
+  width: 25px;
+  height: 5px;
+  margin-left: 5px;
+  background-color: rgba(165, 72, 72, 0.3);
+}
+
+.content > .banner .bannerc .lunbo .slider .active {
+  background-color: #fff;
+}
+
+.content > .banner .bannerc .lunbo .right,
+.content > .banner .bannerc .lunbo .left {
+  color: #fff;
+  position: absolute;
+  text-decoration: none;
+  top: 110px;
+  display: none;
+}
+
+.content > .banner .bannerc .lunbo .rigth {
+  right: 20px;
+}
+
+.content > .banner .bannerc .lunbo .left {
+  left: 20px;
 }
 
 .content > .brandWall {
@@ -438,13 +578,14 @@
 }
 
 .content > .newFloor .newFloorc .fneirong .p3 li {
-  width: 235px;
-  height: 301px;
+  width: 233px;
+  height: 299px;
   float: left;
   margin-left: 13px;
   border-bottom: 15px solid #f5f5f5;
   background-color: #fff;
   list-style: none;
+  border: 1px solid #fff;
 }
 
 .content > .newFloor .newFloorc .fneirong .p3 li .i6 {
@@ -478,11 +619,6 @@
   text-decoration: none;
   color: #000;
   cursor: pointer;
-}
-
-.content > .newFloor .newFloorc .fneirong .p3 .li1 {
-  width: 484px;
-  height: 301px;
 }
 
 .content > .tp {
@@ -620,13 +756,14 @@
 }
 
 .content > .line .newFloorc .fneirong1 .p31 .li7 {
-  width: 235px;
-  height: 301px;
+  width: 233px;
+  height: 299px;
   float: left;
   margin-left: 13px;
   border-bottom: 15px solid #f5f5f5;
   background-color: #fff;
   list-style: none;
+  border: 1px solid #fff;
 }
 
 .content > .line .newFloorc .fneirong1 .p31 .li7 .i7 {
@@ -663,6 +800,10 @@
   cursor: pointer;
 }
 
+.content > .line .newFloorc .fneirong1 .p31 .li7:hover {
+  border: 1px solid #FF0036;
+}
+
 .content > .wonderful {
   width: 1230px;
   margin: 30px auto 0;
@@ -682,11 +823,11 @@
 }
 
 .content > .wonderful ul {
-  height: 333px;
+  height: 1998px;
   list-style: none;
 }
 
-.content > .wonderful ul li {
+.content > .wonderful ul .xuanran {
   width: 235px;
   float: left;
   margin-bottom: 7px;
@@ -694,7 +835,7 @@
   background-color: #fff;
 }
 
-.content > .wonderful ul li a {
+.content > .wonderful ul .xuanran a {
   height: 315px;
   width: 100%;
   display: block;
@@ -706,7 +847,7 @@
   cursor: pointer;
 }
 
-.content > .wonderful ul li a .i6 {
+.content > .wonderful ul .xuanran a .i6 {
   display: block;
   width: 185px;
   height: 185px;
@@ -714,7 +855,7 @@
   margin-top: 23px;
 }
 
-.content > .wonderful ul li a p {
+.content > .wonderful ul .xuanran a p {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -725,7 +866,7 @@
   width: 135px;
 }
 
-.content > .wonderful ul li a .jg {
+.content > .wonderful ul .xuanran a .jg {
   display: block;
   font-size: 18px;
   color: #FF0036;
@@ -734,7 +875,7 @@
   text-align: center;
 }
 
-.content > .wonderful ul .last {
+.content > .wonderful ul .xuanran:nth-of-type(5n) {
   margin-right: 0px;
 }
 
@@ -744,6 +885,47 @@
   background: url(../img/end.png) no-repeat;
   margin: 0 auto 10px;
   text-align: center;
+}
+
+.content > .louti {
+  width: 35px;
+  margin-left: -673px;
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  display: none;
+}
+
+.content > .louti ul > li {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 12px;
+  color: #fff;
+  list-style: none;
+  margin-top: 1px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.content > .louti ul > li a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.content > .louti .li8 {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.content > .louti ul > li:first-child {
+  background-color: #ff0036;
+}
+
+.content > .louti ul > li:last-child {
+  background-color: rgba(0, 0, 0, 0.3);
+  line-height: 13px;
+  padding-top: 8px;
 }
 
 .footer {
