@@ -1,0 +1,44 @@
+@mixin inputs() {
+    outline: 0;
+    border: none;
+}
+
+$color:#000;
+$zi:12px;
+$bg1:#FF0036;
+$color1:#fff;
+.headerl {
+    width: 100%;
+    height: 130px;
+    background-color: #fff;
+    position: relative;
+    .searchl {
+        width: 625px;
+        margin-top: 38px;
+        border: 2px solid #FF0036;
+        border-right: none;
+        position: absolute;
+        left: 25%;
+        .inpt {
+            @include inputs;
+            height: 26px;
+            width: 474px;
+            line-height: 26px;
+            padding: 5px 3px 5px 5px;
+            color: $color;
+            font-size: $zi;
+            border-radius: 2px 0 0 2px;
+            float: left;
+        }
+        .btn {
+            float: left;
+            width: 132px;
+            height: 36px;
+            color: $color1;
+            font-size: 18px;
+            letter-spacing: 5px;
+            background-color: $bg1;
+            border: 0px;
+        }
+    }
+}

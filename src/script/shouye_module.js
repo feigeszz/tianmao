@@ -20,7 +20,6 @@ define([
                                    <p>${ele.title}</p>
                                    <span class="jg">￥${ele.price}</span>
                                     </a>
-                                  
                                 </li>`
                     });
                     $.each(res, function(i, value) {
