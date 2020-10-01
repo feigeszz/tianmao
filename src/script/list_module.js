@@ -20,7 +20,7 @@ define([
                         let tp = ele.piclisturl.split(",");
 
                         str += ` <li class="li9">
-                        <a href="" class="a5">
+                        <a href="http://localhost/js2/tianmao/src/detail.html?sid=${ele.sid}" class="a5">
                             <img src="${ele.url}" alt="">
                             <div class="ulist">
                                 <span class="left">&lt;</span>
@@ -89,7 +89,7 @@ define([
                                 let tp = ele.piclisturl.split(",");
 
                                 str += ` <li class="li9">
-                                <a href="" class="a5">
+                                <a href="http://localhost/js2/tianmao/src/detail.html?sid=${ele.sid}" class="a5">
                                     <img src="${ele.url}" alt="">
                                     <div class="ulist">
                                         <span class="left">&lt;</span>

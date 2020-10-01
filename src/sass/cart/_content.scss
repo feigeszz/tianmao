@@ -1,0 +1,268 @@
+$cl:#f40;
+$fz:12px;
+.content {
+    width: 990px;
+    margin: 0 auto;
+    .cart {
+        min-height: 400px;
+        .bar {
+            height: 33px;
+            font-size: $fz;
+            list-style: none;
+            overflow: hidden;
+            .b {
+                float: left;
+                font-size: 16px;
+                height: 16px;
+                font-weight: 700;
+                padding-bottom: 15px;
+                background: url(http://img.alicdn.com/tfs/TB1K3cfdhGYBuNjy0FnXXX5lpXa-271-453.png) no-repeat -9999px -9999px;
+                cursor: pointer;
+                .qu {
+                    color: $cl;
+                    font-size: 14px;
+                    margin-right: 30px;
+                }
+                .e {
+                    color: #3c3c3c;
+                }
+                .pipe {
+                    width: 1px;
+                    height: 12px;
+                    display: inline-block;
+                    background: #e8e8e8;
+                }
+            }
+            li:last-child {
+                float: right;
+                height: 25px;
+                line-height: 25px;
+                font-size: $fz;
+                .stro {
+                    margin-right: 5px;
+                    color: $cl;
+                }
+                .sjs {
+                    background-color: #aaa;
+                    color: #fff;
+                    width: 55px;
+                    text-align: center;
+                }
+            }
+        }
+        .line {
+            background-color: #e6e6e6;
+            height: 2px;
+            position: relative;
+            .floater {
+                width: 123px;
+                background-color: #f40;
+                height: 2px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                overflow: hidden;
+            }
+        }
+        .cartmain {
+            min-height: 210px;
+            .cartth {
+                height: 50px;
+                line-height: 50px;
+                overflow: hidden;
+                color: #3c3c3c;
+                list-style: none;
+                .yi {
+                    float: left;
+                    height: 50px;
+                    line-height: 50px;
+                    font-size: 12px;
+                    margin-left: 15px;
+                }
+                .er {
+                    float: left;
+                    height: 50px;
+                    line-height: 50px;
+                    width: 211px;
+                    margin-left: 91px;
+                    text-align: left;
+                }
+                .f {
+                    width: 172px;
+                    float: left;
+                    height: 50px;
+                    line-height: 50px;
+                    padding-right: 20px;
+                }
+                .dj {
+                    float: left;
+                    height: 50px;
+                    line-height: 50px;
+                    width: 110px;
+                }
+                .s2 {
+                    float: left;
+                    height: 50px;
+                    line-height: 50px;
+                    width: 110px;
+                }
+                .je {
+                    float: left;
+                    height: 50px;
+                    line-height: 50px;
+                    width: 105px;
+                }
+                .cz {
+                    float: left;
+                    height: 50px;
+                    line-height: 50px;
+                    width: 84px;
+                }
+            }
+            .tl {
+                margin-bottom: 15px;
+                margin-top: 15px;
+                border: 1px solid #ccc;
+                height: 170px;
+                .xr3 {
+                    list-style: none;
+                    .l1 {
+                        float: left;
+                        position: relative;
+                        min-height: 119px;
+                        width: 45px;
+                        .inc {
+                            position: absolute;
+                            top: 20px;
+                            left: 20px;
+                            height: 15px;
+                            width: 15px;
+                        }
+                    }
+                    .l2 {
+                        float: left;
+                        min-height: 110px;
+                        width: 302px;
+                        overflow: hidden;
+                        padding-top: 20px;
+                        position: relative;
+                        .hao {
+                            display: inline-block;
+                            border: 1px solid #eee;
+                            width: 80px;
+                            height: 80px;
+                            text-decoration: none;
+                            img {
+                                display: block;
+                                width: 80px;
+                                height: 80px;
+                                border: 0;
+                            }
+                        }
+                        .nan {
+                            display: inline-block;
+                            text-decoration: none;
+                            font-size: 12px;
+                            max-height: 36px;
+                            width: 186px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            position: absolute;
+                            top: 20px;
+                            left: 94px;
+                            color: #3c3c3c;
+                        }
+                        .hg {
+                            display: inline-block;
+                            margin-right: 5px;
+                            margin-bottom: 5px;
+                            width: 18px;
+                            height: 16px;
+                            img {
+                                border: 0;
+                            }
+                        }
+                    }
+                    .l3 {
+                        float: left;
+                        overflow: hidden;
+                        height: 119px;
+                        width: 172px;
+                        padding-right: 20px;
+                        .xuxi {
+                            padding: 16px 0;
+                            height: 84px;
+                            border: 1px dashed transparent;
+                            position: relative;
+                        }
+                        .xuxi>.sku {
+                            margin: 0 5px 0 15px;
+                            color: #9c9c9c;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            font-size: 12px;
+                        }
+                    }
+                    .l4 {
+                        float: left;
+                        color: #9c9c9c;
+                        width: 120px;
+                        height: 119px;
+                        position: relative;
+                        .pr {
+                            width: 74px;
+                            font-size: 12px;
+                            position: absolute;
+                            top: 23px;
+                            left: 10px;
+                        }
+                        .pr1 {
+                            color: #f40;
+                        }
+                        .jv {
+                            width: 77px;
+                            height: 25px;
+                            padding-top: 23px;
+                            .jia {
+                                display: inline-block;
+                                width: 17px;
+                                height: 23px;
+                                text-decoration: none;
+                            }
+                            .cou {
+                                display: inline-block;
+                                width: 28px;
+                                height: 15px;
+                                text-align: center;
+                            }
+                        }
+                        .yr {
+                            display: block;
+                            width: 84px;
+                            height: 18px;
+                            position: absolute;
+                            top: 23px;
+                            left: 10px;
+                            text-decoration: none;
+                            font-size: 12px;
+                            color: #3c3c3c;
+                        }
+                        .sc {
+                            top: 44px;
+                        }
+                    }
+                    .l5 {
+                        width: 105px;
+                    }
+                    .l6 {
+                        width: 99px;
+                    }
+                }
+            }
+        }
+        .holder {
+            position: relative;
+            height: 50px;
+        }
+    }
+}

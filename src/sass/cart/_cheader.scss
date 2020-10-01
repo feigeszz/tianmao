@@ -12,9 +12,11 @@ $color1:#fff;
     height: 130px;
     background-color: #fff;
     position: relative;
+    border-bottom: 1px solid grey;
     .headerc {
-        width: 1190px;
+        width: 990px;
         margin: 0 auto;
+        height: 130px;
         .heaerleft {
             width: 256px;
             height: 64px;
@@ -31,7 +33,7 @@ $color1:#fff;
         }
         .searchl {
             display: block;
-            width: 625px;
+            width: 492px;
             margin-top: 38px;
             border: 2px solid #FF0036;
             border-right: none;
@@ -40,7 +42,7 @@ $color1:#fff;
             .inpt {
                 @include inputs;
                 height: 26px;
-                width: 474px;
+                width: 394px;
                 line-height: 26px;
                 padding: 5px 3px 5px 5px;
                 color: $color;
@@ -50,7 +52,7 @@ $color1:#fff;
             }
             .btn {
                 float: left;
-                width: 133px;
+                width: 90px;
                 height: 36px;
                 color: $color1;
                 font-size: 18px;
@@ -58,6 +60,10 @@ $color1:#fff;
                 background-color: $bg1;
                 border: 0px;
             }
+        }
+        .searchl2 {
+            position: absolute;
+            left: 50%;
         }
     }
 }

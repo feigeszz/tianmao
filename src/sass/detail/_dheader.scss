@@ -12,6 +12,7 @@ $color1:#fff;
     height: 130px;
     background-color: #fff;
     position: relative;
+    border-bottom: 1px solid grey;
     .headerc {
         width: 1190px;
         margin: 0 auto;
@@ -50,7 +51,7 @@ $color1:#fff;
             }
             .btn {
                 float: left;
-                width: 133px;
+                width: 142px;
                 height: 36px;
                 color: $color1;
                 font-size: 18px;
@@ -58,6 +59,10 @@ $color1:#fff;
                 background-color: $bg1;
                 border: 0px;
             }
+        }
+        .searchl2 {
+            position: absolute;
+            left: 50%;
         }
     }
 }

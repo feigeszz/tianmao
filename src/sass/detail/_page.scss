@@ -1,0 +1,19 @@
+$bg:#fff;
+.page {
+    background-color: $bg;
+    width: 100%;
+    .bgtop {
+        height: 150px;
+        margin-bottom: 10px;
+        background: url(http://gdp.alicdn.com/bao/uploaded/i4/TB1PCKPfZieb18jSZFvwu1I3FXa) repeat center 0;
+        overflow: hidden;
+        .bgtc {
+            width: 990px;
+            margin: 0 auto;
+            img {
+                display: block;
+                height: 150px;
+            }
+        }
+    }
+}
