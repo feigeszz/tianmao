@@ -1,0 +1,60 @@
+.content {
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+    .contentq {
+        width: 100%;
+        background-color: rgb(0, 192, 155);
+        .inner {
+            width: 1190px;
+            margin: auto;
+            position: relative;
+            img {
+                display: block;
+                border: none;
+            }
+        }
+    }
+    .mainform {
+        position: absolute;
+        top: 170px;
+        right: 170px;
+        background-color: #fff;
+        width: 400px;
+        height: 300px;
+        .p1 {
+            font-size: 16px;
+            margin-left: 50px;
+            margin-top: 50px;
+            vertical-align: middle;
+            height: 46px;
+            line-height: 22px;
+            outline: none;
+            border: none;
+            margin-bottom: 10px;
+        }
+        .p2 {
+            margin-top: 10px;
+        }
+        .lb {
+            font-size: 16px;
+            margin-left: 50px;
+            height: 46px;
+            line-height: 22px;
+        }
+        .p3 {
+            margin-left: 50px;
+            margin-top: 20px;
+            font-size: 16px;
+            outline: none;
+            border: none;
+            .btn {
+                margin-right: 90px;
+            }
+            a {
+                text-decoration: none;
+                color: #3c3c3c;
+            }
+        }
+    }
+}
