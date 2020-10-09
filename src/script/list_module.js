@@ -12,7 +12,7 @@ define([
             let next = null;
             $.ajax({
                 type: "get",
-                url: "http://localhost/js2/tianmao/php/listdata.php",
+                url: "http://127.0.0.1/js2/tianmao/php/listdata.php",
                 dataType: "json",
                 success: function(res) {
                     let str = '';
@@ -20,7 +20,7 @@ define([
                         let tp = ele.piclisturl.split(",");
 
                         str += ` <li class="li9">
-                        <a href="http://localhost/js2/tianmao/src/detail.html?sid=${ele.sid}" class="a5">
+                        <a href="http://127.0.0.1/js2/tianmao/src/detail.html?sid=${ele.sid}" class="a5">
                             <img src="${ele.url}" alt="">
                             <div class="ulist">
                                 <span class="left">&lt;</span>
@@ -57,7 +57,7 @@ define([
 
             $.ajax({
                 type: "get",
-                url: "http://localhost/js2/tianmao/php/listd.php",
+                url: "http://127.0.0.1/js2/tianmao/php/listd.php",
                 dataType: "json",
                 success: function(res) {
                     num = parseInt(res);
@@ -77,7 +77,7 @@ define([
                     // console.log(api.getCurrent()); //获取的页码给后端
                     $.ajax({
                         type: "get",
-                        url: "http://localhost/js2/tianmao/php/listdata.php",
+                        url: "http://127.0.0.1/js2/tianmao/php/listdata.php",
                         data: {
                             page: api.getCurrent()
                         },
@@ -89,7 +89,7 @@ define([
                                 let tp = ele.piclisturl.split(",");
 
                                 str += ` <li class="li9">
-                                <a href="http://localhost/js2/tianmao/src/detail.html?sid=${ele.sid}" class="a5">
+                                <a href="http://127.0.0.1/js2/tianmao/src/detail.html?sid=${ele.sid}" class="a5">
                                     <img src="${ele.url}" alt="">
                                     <div class="ulist">
                                         <span class="left">&lt;</span>

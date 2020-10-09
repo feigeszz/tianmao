@@ -9,7 +9,7 @@ define([
             }
             $.ajax({
                 type: "get",
-                url: "http://localhost/js2/tianmao/php/getsid.php",
+                url: "http://127.0.0.1/js2/tianmao/php/getsid.php",
                 data: {
                     sid: datasid
                 },

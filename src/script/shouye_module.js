@@ -6,7 +6,7 @@ define([
             let $num = $('.p3 li').length
             $.ajax({
                 type: "get",
-                url: "http://localhost/js2/tianmao/php/alldata.php",
+                url: "http://127.0.0.1/js2/tianmao/php/alldata.php",
                 dataType: "json",
                 success: function(res) {
                     // console.log(res);
